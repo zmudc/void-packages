@@ -1384,6 +1384,8 @@ Most information about how to write them can be found in their
 [FAQ](http://smarden.org/runit/faq.html#create). The following are guidelines specific to
 Void Linux on how to write services.
 
+Do not attempt to write a runit service for a service that cannot be configured to run in the foreground without modifying the upstream source of the service. Such a runit service will not be accepted.
+
 If the service daemon supports CLI flags, consider adding support for changing it via the
 `OPTS` variable by reading a file called `conf` in the same directory as the daemon.
 
