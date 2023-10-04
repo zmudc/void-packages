@@ -28,6 +28,9 @@ Such forks require heavy patching, maintenance and hours of build time.
 Software need to be used in version announced by authors as ready to use by the general public - usually called releases.
 Betas, arbitrary VCS revisions, templates using tip of development branch taken at build time and releases created by the package maintainer won't be accepted.
 
+Components of upstream projects that consist of services that cannot be configured to meet runit's requirement that services run in the foreground will not be accepted.
+Exceptions will be made only for critical system services identified by the core Void Team in which case the Void developers will modify the upstream source so the affected services run in the foreground.
+
 ## Creating, updating, and modifying packages in Void by yourself
 
 If you really want to get a new package or package update into Void Linux, we recommend you contribute it yourself.
