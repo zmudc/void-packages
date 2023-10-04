@@ -1384,7 +1384,7 @@ Most information about how to write them can be found in their
 [FAQ](http://smarden.org/runit/faq.html#create). The following are guidelines specific to
 Void Linux on how to write services.
 
-Runit require services to run in the foreground. If a service cannot be configured to run in the foreground without modifying the upstream source of the service, the service cannot be included in a new or updated package. In these cases, submit a patch or PR upstream to support running the service in the foreground and politely try to convince upstream to add such support.
+Runit requires services to run in the foreground. If a service cannot be configured to run in the foreground without modifying the upstream source of the service, the service cannot be included in a new or updated package. In these cases, submit a patch or PR upstream to support running the service in the foreground and politely try to convince upstream to add such support.
 
 If the service daemon supports CLI flags, consider adding support for changing it via the
 `OPTS` variable by reading a file called `conf` in the same directory as the daemon.
